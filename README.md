@@ -1,6 +1,6 @@
 # CIS AWS IAM Sentinel Policies for Terraform
 This library, provides prescriptive Terraform policies that can be used to establish secure Terraform configuration
-for Amazon Web Services EC2 Resources included in CIS v1.2.0, v1.4.0 and v3.0.0.
+for Amazon Web Services iam Resources included in CIS v1.2.0, v1.4.0 and v3.0.0.
 The policies that are contained in this library are based on the [CIS Amazon Web Services Benchmarks](https://docs.aws.amazon.com/securityhub/latest/userguide/cis-aws-foundations-benchmark.html).
 Terraform Cloud/Enterprise users can use the policies in this library to establish a foundational level of security for the services that they are
 adopting in Amazon Web Services.
@@ -16,15 +16,15 @@ adopting in Amazon Web Services.
 
 The following CIS standards have equivalent Sentinel policies written for them. These policies get enforced between the `plan` and `apply` phase whenever a run gets queued in TFC/TFE.
 
-- [ec2-ebs-encryption-enabled](./docs/policies/ec2-ebs-encryption-enabled.md)
-- [ec2-metadata-imdsv2-required](./docs/policies/ec2-metadata-imdsv2-required.md)
-- [ec2-network-acl](./docs/policies/ec2-network-acl.md)
-- [ec2-security-group-ingress-traffic-restriction-port-22](./docs/policies/ec2-security-group-ingress-traffic-restriction-port-22.md)
-- [ec2-security-group-ingress-traffic-restriction-port-3389](./docs/policies/ec2-security-group-ingress-traffic-restriction-port-3389.md)
-- [ec2-security-group-ipv4-ingress-traffic-restriction.md](./docs/policies/ec2-security-group-ipv4-ingress-traffic-restriction.md)
-- [ec2-security-group-ipv6-ingress-traffic-restriction.md](./docs/policies/ec2-security-group-ipv6-ingress-traffic-restriction.md)
-- [ec2-vpc-default-security-group-no-traffic](./docs/policies/ec2-vpc-default-security-group-no-traffic.md)
-- [ec2-vpc-flow-logging-enabled](./docs/policies/ec2-vpc-flow-logging-enabled.md)
+- [iam-no-admin-privileges-allowed-by-policies](./docs/policies/iam-no-admin-privileges-allowed-by-policies.md)
+- [iam-no-policies-attached-to-users](./docs/policies/iam-no-policies-attached-to-users.md)
+- [iam-password-expiry](./docs/policies/iam-password-expiry.md)
+- [iam-password-length](./docs/policies/iam-password-length.md)
+- [iam-password-numbers](./docs/policies/iam-password-numbers.md)
+- [iam-password-lowercase](./docs/policies/iam-password-lowercase.md)
+- [iam-password-reuse](./docs/policies/iam-password-reuse.md)
+- [iam-password-symbols](./docs/policies/iam-password-symbols.md)
+- [iam-password-uppercase](./docs/policies/iam-password-uppercase.md)
 
 ### Minimum Sentinel Version Required
 
