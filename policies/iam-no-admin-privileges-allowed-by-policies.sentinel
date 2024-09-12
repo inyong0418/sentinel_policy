@@ -21,6 +21,7 @@ const = {
 	"references":                       "references",
 	"policy":                           "policy",
 	"data":                             "data",
+	"effect":                           "effect",
 }
 
 # Functions
@@ -40,7 +41,7 @@ fetch_policies_allowing_admin_privileges = func() {
 		}
 
 		forbidden_statements = filter iam_policy_document.values[const.statement] as _, statement {
-			strings.to_lower(statement.effect) is const.allow and
+			strings.to_lower(maps.get(statement, const.effect, "")) is const.allow and
 				statement.resources contains "*" and
 				statement.actions contains "*"
 		}
