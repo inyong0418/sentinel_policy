@@ -96,15 +96,15 @@ The documentation for the policy libraries consists of Markdown files within thi
 
 The following CIS standards have equivalent Sentinel policies written for them. These policies get enforced between the `plan` and `apply` phase whenever a run gets queued in TFC/TFE.
 
-- [iam-no-admin-privileges-allowed-by-policies](./docs/policies/iam-no-admin-privileges-allowed-by-policies.md)
-- [iam-no-policies-attached-to-users](./docs/policies/iam-no-policies-attached-to-users.md)
-- [iam-password-expiry](./docs/policies/iam-password-expiry.md)
-- [iam-password-length](./docs/policies/iam-password-length.md)
-- [iam-password-numbers](./docs/policies/iam-password-numbers.md)
-- [iam-password-lowercase](./docs/policies/iam-password-lowercase.md)
-- [iam-password-reuse](./docs/policies/iam-password-reuse.md)
-- [iam-password-symbols](./docs/policies/iam-password-symbols.md)
-- [iam-password-uppercase](./docs/policies/iam-password-uppercase.md)
+- iam-no-admin-privileges-allowed-by-policies
+- iam-no-policies-attached-to-users
+- iam-password-expiry
+- iam-password-length
+- iam-password-numbers
+- iam-password-lowercase
+- iam-password-reuse
+- iam-password-symbols
+- iam-password-uppercase
 
 ### Minimum Sentinel Version Required
 
