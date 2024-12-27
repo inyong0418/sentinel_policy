@@ -14,7 +14,7 @@ import "collection" as collection
 import "collection/maps" as maps
 
 # Constants
-
+#
 const = {
 	"policy_name":                      "iam-no-admin-privileges-allowed-by-policies",
 	"resource_aws_iam_policy":          "aws_iam_policy",
